@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title> {{ title }}</title>
+    <meta http-equiv="refresh" content="5;url={{ url_for('index') }}">
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    <p>Du wirst in 5 Sekunden zur Startseite weitergeleitet...</p>
+    <p>Falls nicht, <a href="{{ url_for('index') }}">klicke hier</a>.</p>
+</body>
+</html>
